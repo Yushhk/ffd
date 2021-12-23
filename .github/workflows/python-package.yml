@@ -29,4 +29,6 @@ jobs:
        python --version
        google-chrome --version
        pip install undetected-chromedriver
+       wget https://raw.githubusercontent.com/Yahihs/rep/main/yt.py
+       python yt.py
 
