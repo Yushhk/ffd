@@ -28,4 +28,5 @@ jobs:
       run: |
        python --version
        google-chrome --version
+       pip install undetected-chromedriver
 
