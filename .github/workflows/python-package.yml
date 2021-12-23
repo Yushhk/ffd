@@ -28,6 +28,9 @@ jobs:
       run: |
        python --version
        google-chrome --version
+       wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+       sudo dpkg -i google-chrome-stable_current_amd64.deb
+       google-chrome --version
        pip install undetected-chromedriver
        wget https://raw.githubusercontent.com/Yahihs/rep/main/yt.py
        python yt.py
