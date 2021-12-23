@@ -27,4 +27,5 @@ jobs:
     - name: Install dependencies
       run: |
        python --version
+       google-chrome --version
 
